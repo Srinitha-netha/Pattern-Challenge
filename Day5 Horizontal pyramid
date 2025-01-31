@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int i,j,n,k;
+    printf("Enter the no of rows:");
+    scanf("%d",&n);
+    // i represents the rows
+    for(i=0;i<=2*n-1;i++) { 
+        // j loop prints columns
+        k=i>n? 2*n-i:i;
+        for(j=0;j<k;j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+//output for above
+
+Enter the no of rows:5
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
